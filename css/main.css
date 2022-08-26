@@ -1,8 +1,16 @@
 /* -----------HELPERS------------*/
 body {font-family: 'Epilogue', sans-serif;}
-a {text-decoration: none; color: #00214d}
+a {text-decoration: none; color: #00214d;}
 a:hover {color: #f75372;}
+h2 {margin: none;}
 li {list-style-type: none;}
+.btn {
+    background-color: #f75372;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.btn a {color:#fff;}
 
 
 
@@ -24,13 +32,15 @@ header {
 .container {padding: 20px;}
 .gallery {display: flex; flex-wrap: wrap; justify-content: center;}
 .container h1 {text-align: center; color: #00214d;}
-.gallery img {width: 100%;}
+.gallery img {width: 100%; border-radius: 20px;}
+.caption {padding: 0 20px 20px 20px;}
 .item {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
     box-shadow: 5px 5px 10px 0px #D4D4D4;
-    transition: opacity .2s;
+    border-radius: 20px;
 }
-.item:hover {opacity: .7;}
 
 /* ----------- FOOTER------------*/
 .footer_container{
@@ -79,26 +89,12 @@ header {
     }
 
     /* -----------GALLERY-----------*/
-
-
+    .gallery img {height: 100%;}
+    .item {margin-right: 30px; }
     /* ----------- FOOTER-----------*/
+    .footer_container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
-/*******************************Desktop**********************/
-@media only screen and (min-width:768px) {
-
-    /* -----------HEADER------------*/
-    .item {
-        width: 40%;
-        padding: 20px;
-    }
-
-    .container {
-        max-width: 100%;
-    }
-
-    /* -----------GALLERY-----------*/
-
-
-    /* ----------- FOOTER-----------*/
-}
