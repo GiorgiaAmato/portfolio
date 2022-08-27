@@ -227,8 +227,29 @@ textarea {
         justify-content: space-around;
     }
 
-    /* ----------- PAGE -----------*/
-    input[type=text] {
+
+    /* ----------- PAGE ABOUT-----------*/
+        .about {
+            display: flex;
+            flex-direction: row;
+            padding: 25px;
+        }
+        
+        .about_content {
+            padding: 0 25px;
+        }
+    
+        .about img {
+            width: 30%;
+        }
+    
+        .about h2 {
+            margin-bottom: 0;
+        }
+
+    /* ----------- PAGE CONTATTAMI-----------*/
+    input[type=text],
+        textarea     {
         width: 50%;
     }
 
