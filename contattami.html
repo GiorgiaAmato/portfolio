@@ -48,10 +48,28 @@
     </header>
 
     <main id="main-content">
-        <div class="container">
-           
+        <!-- FORM CONTACT -->
+            <div class="contact_container">
+                <form>
+                    <div class="form_container">
+                        <h2>Contattami per maggiori informazioni o per ricevere un preventivo</h2>
+        
+                        <input type="text" placeholder="Nome" name="nome" id="nome" required>
+                        <input type="text" placeholder="Cognome" name="cognome" id="cognome" required>
+                        <input type="text" placeholder="Indirizzo mail" name="email" id="email" required>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Messaggio"></textarea>
 
-        </div>
+                        <label class="radio_container">Ho letto l’<a href="#">informativa sulla privacy</a> e acconsento al <a
+                                href="#">trattamento dei dati</a>.
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+        
+                        <button type="submit" class="btn btn_submit">Invia</button>
+                    </div>
+        
+                </form>
+            </div>
     </main>
 
     <!--FOOTER-->
