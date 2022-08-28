@@ -41,9 +41,11 @@ header {
 .gallery img {width: 100%; border-radius: 20px;}
 .caption {padding: 0 20px 20px 20px;}
 .item {
+    flex: 0 1 80%;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    margin-right: 5px;
     box-shadow: 5px 5px 10px 0px #D4D4D4;
     border-radius: 20px;
 }
@@ -218,11 +220,9 @@ textarea {
     }
 
     /* -----------GALLERY-----------*/
-    .gallery img {
-        height: 100%;
-    }
 
     .item {
+        flex: 0 1 33.33%;
         margin-right: 30px;
     }
 
